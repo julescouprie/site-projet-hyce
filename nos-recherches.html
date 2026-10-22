@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos recherches | Projet HYCE</title>
+  <link rel="icon" type="image/png" href="assets/images/wix/7d0a66_ecf03087a92f4b86992048cc762e46ee_mv2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <style>
+    html, body, * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-impact {
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-white text-black flex flex-col min-h-screen">
+    <!-- Navigation Header (Blanc, liens noirs, bouton noir) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFFFF] shadow-sm transition-all h-[75px] flex items-center">
+    <div class="max-w-7xl w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <!-- Logo HYCE Noir -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="Projet HYCE" class="h-10 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation (Sans Boutique) -->
+      <nav class="hidden lg:flex items-center gap-8 text-[#000000] text-[15px] font-medium font-poppins">
+        <!-- Dropdown Nos recherches -->
+        <div class="relative group py-2">
+          <a href="nos-recherches.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer text-[#008AFC] font-semibold">
+            <span>Nos recherches</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="nos-recherches.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Nos recherches (Vue d'ensemble)</a>
+            <a href="fonctionnement-d-un-moteur.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Fonctionnement d'un moteur</a>
+            <a href="les-defis-techniques.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les défis techniques</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Notre équipe -->
+        <div class="relative group py-2">
+          <a href="notre-equipe.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Notre équipe</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-44 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="estaca.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">ESTACA</a>
+          </div>
+        </div>
+
+        <a href="partenaires.html" class="hover:text-[#008AFC] transition-colors ">Partenaires</a>
+
+        <!-- Dropdown Hydrogène -->
+        <div class="relative group py-2">
+          <a href="hydrogene.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Hydrogène</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="hydrogene.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Pourquoi l'hydrogène ?</a>
+            <a href="sa-creation.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sa création</a>
+            <a href="les-avantages.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les avantages</a>
+            <a href="une-energie-d-avenir.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Une énergie d'avenir ?</a>
+            <a href="securite.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sécurité</a>
+            <a href="marche.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Marché</a>
+          </div>
+        </div>
+
+        <a href="autres-projets.html" class="hover:text-[#008AFC] transition-colors ">Autres projets</a>
+      </nav>
+
+      <!-- CTA Button Nous contacter (Pillule noire originale) -->
+      <div class="hidden lg:flex items-center">
+        <a href="contact.html" class="bg-[#000000] text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition-all shadow-sm font-poppins">
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Burger Mobile -->
+      <button id="burger-btn" class="lg:hidden p-2 text-black" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white text-black z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="h-8">
+        <button id="close-menu-btn" class="text-gray-500 hover:text-black text-2xl">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-3 mt-6 text-sm font-medium font-poppins">
+        <a href="index.html" class="py-2 border-b border-gray-100 text-black">Accueil</a>
+        <a href="nos-recherches.html" class="py-2 border-b border-gray-100 text-black">Nos recherches</a>
+        <a href="fonctionnement-d-un-moteur.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Fonctionnement d'un moteur</a>
+        <a href="les-defis-techniques.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les défis techniques</a>
+        <a href="notre-equipe.html" class="py-2 border-b border-gray-100 text-black">Notre équipe</a>
+        <a href="estaca.html" class="py-2 border-b border-gray-100 text-black">ESTACA</a>
+        <a href="partenaires.html" class="py-2 border-b border-gray-100 text-black">Partenaires</a>
+        <a href="hydrogene.html" class="py-2 border-b border-gray-100 text-black">Hydrogène</a>
+        <a href="sa-creation.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sa création</a>
+        <a href="les-avantages.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les avantages</a>
+        <a href="une-energie-d-avenir.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Une énergie d'avenir ?</a>
+        <a href="securite.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sécurité</a>
+        <a href="marche.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Marché</a>
+        <a href="autres-projets.html" class="py-2 border-b border-gray-100 text-black">Autres projets</a>
+        <a href="contact.html" class="py-3 text-black font-semibold">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <main class="flex-grow pt-[75px]">
+
+<!-- Hero Bannière Nos recherches / 2025 - 2026 -->
+<section class="relative w-full h-[320px] sm:h-[420px] overflow-hidden flex items-center justify-center text-center">
+  <img src="assets/images/wix/7d0a66_7b1c020f380245779debc31c84b1fe81_mv2.png" alt="Nos recherches" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="relative z-10 px-4 space-y-3">
+    <h1 class="text-4xl sm:text-6xl font-black italic tracking-wider text-white font-impact uppercase">
+      Nos recherches
+    </h1>
+    <p class="text-2xl sm:text-3xl font-extrabold text-[#008AFC] tracking-wider uppercase font-impact">
+      2025 - 2026
+    </p>
+  </div>
+</section>
+
+<!-- Projets 2025 - 2026 : Bandes 50/50 Pleine Largeur Identiques Wix -->
+<div class="w-full flex flex-col divide-y divide-gray-100">
+  
+  <!-- 1. Prédimensionnement pour rétrofit -->
+  <section class="grid grid-cols-1 md:grid-cols-2 min-h-[460px] items-stretch bg-white">
+    <div class="h-full min-h-[350px]">
+      <img src="assets/images/wix/7d0a66_cdadd560ec3946608ae4c45642ca2b4e_mv2.jpg" alt="Prédimensionnement pour rétrofit" class="w-full h-full object-cover">
+    </div>
+    <div class="flex flex-col justify-center p-8 sm:p-14 space-y-6 bg-neutral-900 text-white">
+      <h3 class="text-2xl sm:text-3xl font-black font-impact tracking-wide uppercase leading-tight">
+        Prédimensionnement pour rétrofit de moteur hydrogène à combustion interne
+      </h3>
+      <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+        Étude approfondie de modélisation thermodynamique et d’architecture mécanique pour la conversion d’un bloc moteur thermique vers une alimentation 100% hydrogène.
+      </p>
+      <div>
+        <a href="assets/pdf/Compte_rendu_PITA_Moteur.pdf" target="_blank" class="inline-flex items-center gap-2 bg-[#002AFF] text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition duration-300 shadow-md">
+          <span>Télécharger</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Etude sur les émissions de NOx -->
+  <section class="grid grid-cols-1 md:grid-cols-2 min-h-[460px] items-stretch bg-white">
+    <div class="flex flex-col justify-center p-8 sm:p-14 space-y-6 bg-neutral-900 text-white md:order-1 order-2">
+      <h3 class="text-2xl sm:text-3xl font-black font-impact tracking-wide uppercase leading-tight">
+        Etude sur les émissions de NOx
+      </h3>
+      <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+        Analyse thermodynamique des températures de pointe de flamme hydrogène et stratégies de dépollution par recirculation des gaz (EGR) et injection d’eau afin de neutraliser la formation des oxydes d’azote.
+      </p>
+      <div>
+        <a href="assets/pdf/Rapport_final_Noxs_1.pdf" target="_blank" class="inline-flex items-center gap-2 bg-[#002AFF] text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition duration-300 shadow-md">
+          <span>Télécharger</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="h-full min-h-[350px] md:order-2 order-1">
+      <img src="assets/images/wix/7d0a66_3924b99f267f41d283703799acc3b76f_mv2.jpg" alt="Etude sur les émissions de NOx" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+  <!-- 3. Intégration des systèmes embarqués -->
+  <section class="grid grid-cols-1 md:grid-cols-2 min-h-[460px] items-stretch bg-white">
+    <div class="h-full min-h-[350px]">
+      <img src="assets/images/wix/7d0a66_2ad1ebe045974bad90a3681f91296a21_mv2.jpg" alt="Systèmes embarqués" class="w-full h-full object-cover">
+    </div>
+    <div class="flex flex-col justify-center p-8 sm:p-14 space-y-6 bg-neutral-900 text-white">
+      <h3 class="text-2xl sm:text-3xl font-black font-impact tracking-wide uppercase leading-tight">
+        Intégration des systèmes embarqués pour véhicule hydrogène
+      </h3>
+      <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+        Développement de l’architecture électronique, acquisition de données télémétriques temps réel, cartographie moteur customisée et interfaçage avec les protocoles de sécurité H2.
+      </p>
+      <div>
+        <a href="assets/pdf/Rapport_PITA_Systeme_embarque.pdf" target="_blank" class="inline-flex items-center gap-2 bg-[#002AFF] text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition duration-300 shadow-md">
+          <span>Télécharger</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Outil de simulation et moteur MCI -->
+  <section class="grid grid-cols-1 md:grid-cols-2 min-h-[460px] items-stretch bg-white">
+    <div class="flex flex-col justify-center p-8 sm:p-14 space-y-6 bg-neutral-900 text-white md:order-1 order-2">
+      <h3 class="text-2xl sm:text-3xl font-black font-impact tracking-wide uppercase leading-tight">
+        Développement d’un outil de simulation et d’un moteur hydrogène à combustion interne
+      </h3>
+      <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+        Conception d’un jumeau numérique prédictif sous MATLAB / Simulink pour simuler le cycle à 4 temps, calibrer les angles d'injection et maximiser le couple moteur.
+      </p>
+      <div>
+        <a href="assets/pdf/Automatisation_de_Fluent_en_2d.pdf" target="_blank" class="inline-flex items-center gap-2 bg-[#002AFF] text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition duration-300 shadow-md">
+          <span>Télécharger</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="h-full min-h-[350px] md:order-2 order-1">
+      <img src="assets/images/wix/7d0a66_a0dba466ea484e62a312d1879a781f1b_mv2.jpg" alt="Outil de simulation" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+</div>
+
+<!-- Séparateur Bannière 2024 - 2025 -->
+<section class="relative w-full h-[240px] overflow-hidden flex items-center justify-center text-center">
+  <img src="assets/images/wix/7d0a66_14219be735f54ec1932d779e96b76f9f_mv2.jpg" alt="2024 - 2025" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-black/60"></div>
+  <div class="relative z-10 px-4">
+    <h2 class="text-3xl sm:text-5xl font-black italic tracking-wider text-white font-impact uppercase">
+      2024 - 2025
+    </h2>
+  </div>
+</section>
+
+<!-- Projets 2024 - 2025 -->
+<div class="w-full flex flex-col divide-y divide-gray-100 pb-20">
+  
+  <!-- 5. Etude des systèmes de stockage -->
+  <section class="grid grid-cols-1 md:grid-cols-2 min-h-[460px] items-stretch bg-white">
+    <div class="h-full min-h-[350px]">
+      <img src="assets/images/wix/7d0a66_3e8770079d0e438487fbf7226f69c63f_mv2.jpg" alt="Stockage hydrogène" class="w-full h-full object-cover">
+    </div>
+    <div class="flex flex-col justify-center p-8 sm:p-14 space-y-6 bg-neutral-900 text-white">
+      <h3 class="text-2xl sm:text-3xl font-black font-impact tracking-wide uppercase leading-tight">
+        Etude des systèmes de stockage d’hydrogène
+      </h3>
+      <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+        Comparaison des réservoirs type IV en fibres de carbone (350 vs 700 bars), intégration spatiale dans le châssis et calculs de résistance aux crash-tests.
+      </p>
+      <div>
+        <a href="assets/pdf/Compte_Rendu_PITA_Reservoirs_1.pdf" target="_blank" class="inline-flex items-center gap-2 bg-[#002AFF] text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition duration-300 shadow-md">
+          <span>Télécharger</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Consommation moteur -->
+  <section class="grid grid-cols-1 md:grid-cols-2 min-h-[460px] items-stretch bg-white">
+    <div class="flex flex-col justify-center p-8 sm:p-14 space-y-6 bg-neutral-900 text-white md:order-1 order-2">
+      <h3 class="text-2xl sm:text-3xl font-black font-impact tracking-wide uppercase leading-tight">
+        Consommation moteur à combustion interne à hydrogène
+      </h3>
+      <p class="text-gray-300 text-sm sm:text-base leading-relaxed font-light">
+        Évaluation de l'autonomie et de la consommation massique sur cycles d'accélération intensive représentatifs des contraintes du tracé de la Nordschleife.
+      </p>
+      <div>
+        <a href="assets/pdf/Rapport_Second_Semestre_PITA_4A_HYCE_2025-2026_WEBSITE.pdf" target="_blank" class="inline-flex items-center gap-2 bg-[#002AFF] text-white px-8 py-3 rounded-full text-xs font-semibold uppercase tracking-wider hover:bg-blue-600 transition duration-300 shadow-md">
+          <span>Télécharger</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="h-full min-h-[350px] md:order-2 order-1">
+      <img src="assets/images/wix/7d0a66_468b6f3f59bc444db902f4e87f4e0e09_mv2.jpg" alt="Consommation moteur" class="w-full h-full object-cover">
+    </div>
+  </section>
+
+</div>
+
+  </main>
+    <!-- Footer (Blanc, texte noir, 2 colonnes, logo à droite) -->
+  <footer class="bg-[#FFFFFF] border-t border-gray-100 py-16 text-black mt-auto font-poppins">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Gauche -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="font-bold text-sm tracking-wide uppercase">SUIVEZ-NOUS</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.instagram.com/hyce_estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="Instagram">
+                <img src="assets/images/wix/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.linkedin.com/company/hyce-estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="LinkedIn">
+                <img src="assets/images/wix/aa0402eb9ba2430d9d0620b59556efca.png" alt="LinkedIn" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.tiktok.com/@hyce_estaca" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="TikTok">
+                <img src="assets/images/wix/11062b_4b88b89fe4694d949be4919c81f194b4_mv2.png" alt="TikTok" class="w-4 h-4 invert brightness-0">
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-1 text-sm font-light">
+            <p><span class="font-semibold text-black">E-mail :</span> &nbsp; <a href="mailto:Projet.hyce@estaca.eu" class="hover:underline text-gray-800">Projet.hyce@estaca.eu</a></p>
+            <p><span class="font-semibold text-black">Adresse :</span> &nbsp; <span class="text-gray-800">Rue Georges Charpak, 53000 Laval</span></p>
+          </div>
+
+          <div class="pt-2">
+            <p class="font-bold text-sm mb-3">Abonnez-vous à notre newsletter !</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" class="flex max-w-sm">
+              <input type="email" placeholder="E-mail" required class="flex-grow px-4 py-2 border border-black rounded-l-full text-xs focus:outline-none font-poppins">
+              <button type="submit" class="bg-black text-white px-5 py-2 rounded-r-full text-xs font-semibold hover:bg-neutral-800 transition font-poppins">S'abonner</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Colonne Droite: Logo HYCE Noir -->
+        <div class="flex justify-center md:justify-end">
+          <img src="assets/images/wix/7d0a66_cd7d50c504b2476c929c837ff3b37d3d_mv2.png" alt="HYCE" class="h-32 sm:h-40 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notre équipe | Projet HYCE</title>
+  <link rel="icon" type="image/png" href="assets/images/wix/7d0a66_ecf03087a92f4b86992048cc762e46ee_mv2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <style>
+    html, body, * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-impact {
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-black text-white flex flex-col min-h-screen">
+    <!-- Navigation Header (Blanc, liens noirs, bouton noir) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFFFF] shadow-sm transition-all h-[75px] flex items-center">
+    <div class="max-w-7xl w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <!-- Logo HYCE Noir -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="Projet HYCE" class="h-10 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation (Sans Boutique) -->
+      <nav class="hidden lg:flex items-center gap-8 text-[#000000] text-[15px] font-medium font-poppins">
+        <!-- Dropdown Nos recherches -->
+        <div class="relative group py-2">
+          <a href="nos-recherches.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Nos recherches</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="nos-recherches.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Nos recherches (Vue d'ensemble)</a>
+            <a href="fonctionnement-d-un-moteur.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Fonctionnement d'un moteur</a>
+            <a href="les-defis-techniques.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les défis techniques</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Notre équipe -->
+        <div class="relative group py-2">
+          <a href="notre-equipe.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer text-[#008AFC] font-semibold">
+            <span>Notre équipe</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-44 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="estaca.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">ESTACA</a>
+          </div>
+        </div>
+
+        <a href="partenaires.html" class="hover:text-[#008AFC] transition-colors ">Partenaires</a>
+
+        <!-- Dropdown Hydrogène -->
+        <div class="relative group py-2">
+          <a href="hydrogene.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Hydrogène</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="hydrogene.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Pourquoi l'hydrogène ?</a>
+            <a href="sa-creation.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sa création</a>
+            <a href="les-avantages.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les avantages</a>
+            <a href="une-energie-d-avenir.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Une énergie d'avenir ?</a>
+            <a href="securite.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sécurité</a>
+            <a href="marche.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Marché</a>
+          </div>
+        </div>
+
+        <a href="autres-projets.html" class="hover:text-[#008AFC] transition-colors ">Autres projets</a>
+      </nav>
+
+      <!-- CTA Button Nous contacter (Pillule noire originale) -->
+      <div class="hidden lg:flex items-center">
+        <a href="contact.html" class="bg-[#000000] text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition-all shadow-sm font-poppins">
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Burger Mobile -->
+      <button id="burger-btn" class="lg:hidden p-2 text-black" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white text-black z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="h-8">
+        <button id="close-menu-btn" class="text-gray-500 hover:text-black text-2xl">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-3 mt-6 text-sm font-medium font-poppins">
+        <a href="index.html" class="py-2 border-b border-gray-100 text-black">Accueil</a>
+        <a href="nos-recherches.html" class="py-2 border-b border-gray-100 text-black">Nos recherches</a>
+        <a href="fonctionnement-d-un-moteur.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Fonctionnement d'un moteur</a>
+        <a href="les-defis-techniques.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les défis techniques</a>
+        <a href="notre-equipe.html" class="py-2 border-b border-gray-100 text-black">Notre équipe</a>
+        <a href="estaca.html" class="py-2 border-b border-gray-100 text-black">ESTACA</a>
+        <a href="partenaires.html" class="py-2 border-b border-gray-100 text-black">Partenaires</a>
+        <a href="hydrogene.html" class="py-2 border-b border-gray-100 text-black">Hydrogène</a>
+        <a href="sa-creation.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sa création</a>
+        <a href="les-avantages.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les avantages</a>
+        <a href="une-energie-d-avenir.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Une énergie d'avenir ?</a>
+        <a href="securite.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sécurité</a>
+        <a href="marche.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Marché</a>
+        <a href="autres-projets.html" class="py-2 border-b border-gray-100 text-black">Autres projets</a>
+        <a href="contact.html" class="py-3 text-black font-semibold">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <main class="flex-grow pt-[75px]">
+
+<!-- Hero Bannière Photo de groupe avec titre NOTRE ÉQUIPE ultra-visible -->
+<section class="relative w-full overflow-hidden bg-black flex items-center justify-center">
+  <div class="relative w-full h-[400px] sm:h-[550px] lg:h-[650px]">
+    <img src="assets/images/wix/7d0a66_e80c9899ea6545e89aa1241988b2d2de_mv2.jpg" alt="L'Équipe HYCE" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-black/40 backdrop-blur-[2px] flex items-center justify-center p-6">
+      <div class="bg-white/95 backdrop-blur-md px-8 sm:px-16 py-6 sm:py-8 rounded-3xl shadow-2xl border border-white/60 text-center">
+        <h1 class="text-3xl sm:text-6xl lg:text-7xl font-extrabold tracking-widest text-black font-poppins uppercase">
+          Notre équipe
+        </h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1. CO-FONDATEURS (Fond authentique Wix: 7d0a66_2bc9038e330b46ac958409a614262962) -->
+<section class="relative py-20 px-6 overflow-hidden">
+  <img src="assets/images/wix/7d0a66_2bc9038e330b46ac958409a614262962_mv2.jpg" alt="Fond Co-fondateurs" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-neutral-200/90 backdrop-blur-[1px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto space-y-12 text-center">
+    <div class="inline-block border-2 border-black bg-white/80 backdrop-blur-sm px-10 py-2.5 rounded-2xl shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black font-impact tracking-wider uppercase text-black">CO-FONDATEUR</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <!-- Micah BARTHELEMY -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_ff6c73d18bf248ea8f679baccf817d60_mv2.jpg" alt="Micah BARTHELEMY" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-base sm:text-lg font-impact tracking-wide uppercase">
+          <a href="https://www.linkedin.com/in/micah-barthelemy-4819212b7/" target="_blank" rel="noopener" class="text-black hover:underline">Micah BARTHELEMY</a>
+        </p>
+      </div>
+
+      <!-- William NICOULEAU -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_1a7a1652d6ab4a43a1b814a9a3f9a774_mv2.jpg" alt="William NICOULEAU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-base sm:text-lg font-impact tracking-wide uppercase">
+          <a href="https://www.linkedin.com/in/william-nicouleau/" target="_blank" rel="noopener" class="text-black hover:underline">William NICOULEAU</a>
+        </p>
+      </div>
+
+      <!-- Yohan ROY -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_39e6c6a0862b4eceb012f0ea52972256_mv2.jpg" alt="Yohan ROY" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-base sm:text-lg font-impact tracking-wide uppercase">
+          <a href="https://www.linkedin.com/in/yohan-roy-a7ba032b2/" target="_blank" rel="noopener" class="text-black hover:underline">Yohan ROY</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 2. PÔLE MOTEUR (Fond authentique Wix: 7d0a66_48c7dc6f45854bfa8af3e81e81e291f4) -->
+<section class="relative py-20 px-6 overflow-hidden">
+  <img src="assets/images/wix/7d0a66_48c7dc6f45854bfa8af3e81e81e291f4_mv2.jpg" alt="Fond Pôle Moteur" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-amber-900/80 backdrop-blur-[1px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto space-y-12 text-center">
+    <div class="inline-block border-2 border-black bg-white/90 backdrop-blur-sm px-10 py-2.5 rounded-2xl shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black font-impact tracking-wider uppercase text-black">PÔLE MOTEUR</h2>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-6 max-w-5xl mx-auto">
+      <!-- Paul ABI KHALIL -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_348cde1a9c0848ea86e3cfe31b25089e_mv2.jpg" alt="Paul ABI KHALIL" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/paul-abi-khalil-59833a297/" target="_blank" rel="noopener" class="hover:underline">Paul ABI KHALIL</a>
+        </p>
+      </div>
+
+      <!-- Lucien TANASOIU -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_7496973bf1a943e4963b2cb5b30ad476_mv2.jpg" alt="Lucien TANASOIU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/lucien-tanasoiu-252802380/" target="_blank" rel="noopener" class="hover:underline">Lucien TANASOIU</a>
+        </p>
+      </div>
+
+      <!-- Arnaud ROY -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_ec74a89bb1e245c9b632554038436854_mv2.jpg" alt="Arnaud ROY" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/arnaud-roy-321a24337/" target="_blank" rel="noopener" class="hover:underline">Arnaud ROY</a>
+        </p>
+      </div>
+
+      <!-- Adrien DEGLORIE -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_c684f357728d4e82b97b5a435b21bee5_mv2.jpg" alt="Adrien DEGLORIE" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/adrien-deglorie-b59397336/" target="_blank" rel="noopener" class="hover:underline">Adrien DEGLORIE</a>
+        </p>
+      </div>
+
+      <!-- William NICOULEAU -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_1a7a1652d6ab4a43a1b814a9a3f9a774_mv2.jpg" alt="William NICOULEAU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/william-nicouleau/" target="_blank" rel="noopener" class="hover:underline">William NICOULEAU</a>
+        </p>
+      </div>
+
+      <!-- Axel PUCHOT -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_724a067eb8514b69925801a4803daa7e_mv2.jpg" alt="Axel PUCHOT" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/axel-puchot-a864142b1/" target="_blank" rel="noopener" class="hover:underline">Axel PUCHOT</a>
+        </p>
+      </div>
+
+      <!-- Quentin BRETECHE -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_9ce57b796fa5401fa148580d5f641210_mv2.jpg" alt="Quentin BRETECHE" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/quentin-bret%C3%A9ch%C3%A9-339342296/" target="_blank" rel="noopener" class="hover:underline">Quentin BRETECHE</a>
+        </p>
+      </div>
+
+      <!-- Micah BARTHELEMY -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_ff6c73d18bf248ea8f679baccf817d60_mv2.jpg" alt="Micah BARTHELEMY" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/micah-barthelemy-4819212b7/" target="_blank" rel="noopener" class="hover:underline">Micah BARTHELEMY</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. PÔLE SYSTÈMES EMBARQUÉS (Fond authentique Wix: 7d0a66_2efb6f61ffd54649940751ee71f66d75) -->
+<section class="relative py-20 px-6 overflow-hidden">
+  <img src="assets/images/wix/7d0a66_2efb6f61ffd54649940751ee71f66d75_mv2.jpg" alt="Fond Systèmes Embarqués" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-slate-900/85 backdrop-blur-[1px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto space-y-12 text-center">
+    <div class="inline-block border-2 border-black bg-white/90 backdrop-blur-sm px-10 py-2.5 rounded-2xl shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black font-impact tracking-wider uppercase text-black">PÔLE SYSTÈMES EMBARQUÉS</h2>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-5xl mx-auto">
+      <!-- Thomas RENOU -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_3891183904f64453bc74e117aec5a65f_mv2.jpg" alt="Thomas RENOU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">Thomas RENOU</p>
+      </div>
+
+      <!-- Lucas BUZEAU -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_fb6490c2381a4414af8de6243a18f61f_mv2.jpg" alt="Lucas BUZEAU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/lucas-buzeau-323492379/" target="_blank" rel="noopener" class="hover:underline">Lucas BUZEAU</a>
+        </p>
+      </div>
+
+      <!-- Jules COUPRIE -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_2d2b2d5dcf374a2a8a0b2925312f8a42_mv2.jpg" alt="Jules COUPRIE" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/jules-couprie/" target="_blank" rel="noopener" class="hover:underline">Jules COUPRIE</a>
+        </p>
+      </div>
+
+      <!-- Paul ABI KHALIL -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_348cde1a9c0848ea86e3cfe31b25089e_mv2.jpg" alt="Paul ABI KHALIL" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/paul-abi-khalil-59833a297/" target="_blank" rel="noopener" class="hover:underline">Paul ABI KHALIL</a>
+        </p>
+      </div>
+
+      <!-- Yohan ROY -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_39e6c6a0862b4eceb012f0ea52972256_mv2.jpg" alt="Yohan ROY" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/yohan-roy-a7ba032b2/" target="_blank" rel="noopener" class="hover:underline">Yohan ROY</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. PÔLE ÉNERGIE (Fond authentique Wix: 7d0a66_a49cf07e945c42749e30914903ece5cb) -->
+<section class="relative py-20 px-6 overflow-hidden">
+  <img src="assets/images/wix/7d0a66_a49cf07e945c42749e30914903ece5cb_mv2.jpg" alt="Fond Pôle Énergie" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-teal-900/80 backdrop-blur-[1px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto space-y-12 text-center">
+    <div class="inline-block border-2 border-black bg-white/90 backdrop-blur-sm px-10 py-2.5 rounded-2xl shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black font-impact tracking-wider uppercase text-black">PÔLE ÉNERGIE</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <!-- Hélie SAILLARD-LEPAGE -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_1f6bfb71ba2c4e7684a3091deaaae12e_mv2.jpg" alt="Hélie SAILLARD-LEPAGE" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-sm sm:text-base font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/h%C3%A9lie-saillard-lepage-841219350/" target="_blank" rel="noopener" class="hover:underline">Hélie SAILLARD-LEPAGE</a>
+        </p>
+      </div>
+
+      <!-- Axel PUCHOT -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_724a067eb8514b69925801a4803daa7e_mv2.jpg" alt="Axel PUCHOT" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-sm sm:text-base font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/axel-puchot-a864142b1/" target="_blank" rel="noopener" class="hover:underline">Axel PUCHOT</a>
+        </p>
+      </div>
+
+      <!-- Antoine MERLATEAU -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_84c35f675c56438498a0d7b32250cdb8_mv2.jpg" alt="Antoine MERLATEAU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-sm sm:text-base font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/antoine-merlateau-045390347/" target="_blank" rel="noopener" class="hover:underline">Antoine MERLATEAU</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 5. PÔLE COMMUNICATION (Fond authentique Wix: 7d0a66_edd6f27458fd4d0fb182ef6fb262d495) -->
+<section class="relative py-20 px-6 overflow-hidden">
+  <img src="assets/images/wix/7d0a66_edd6f27458fd4d0fb182ef6fb262d495_mv2.jpg" alt="Fond Pôle Communication" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-neutral-800/85 backdrop-blur-[1px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto space-y-12 text-center">
+    <div class="inline-block border-2 border-black bg-white/90 backdrop-blur-sm px-10 py-2.5 rounded-2xl shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black font-impact tracking-wider uppercase text-black">PÔLE COMMUNICATION</h2>
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-6 max-w-5xl mx-auto">
+      <!-- Laura FLOCHER -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_9b14eb86c5d0490b9df0b887814646cd_mv2.jpg" alt="Laura FLOCHER" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/laura-flocher-%C3%A9tudiante-communication/" target="_blank" rel="noopener" class="hover:underline">Laura FLOCHER</a>
+        </p>
+      </div>
+
+      <!-- Jules COUPRIE -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_2d2b2d5dcf374a2a8a0b2925312f8a42_mv2.jpg" alt="Jules COUPRIE" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/jules-couprie/" target="_blank" rel="noopener" class="hover:underline">Jules COUPRIE</a>
+        </p>
+      </div>
+
+      <!-- Nathan SERNA -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_73fb15c1ca9e44e9879f1a70fc1d8f81_mv2.jpg" alt="Nathan SERNA" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/nathanserna/" target="_blank" rel="noopener" class="hover:underline">Nathan SERNA</a>
+        </p>
+      </div>
+
+      <!-- Yann BARRET -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_7cbf36cedb244806b3954c8b785ba4ea_mv2.jpg" alt="Yann BARRET" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">Yann BARRET</p>
+      </div>
+
+      <!-- Antoine MERLATEAU -->
+      <div class="space-y-2">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_84c35f675c56438498a0d7b32250cdb8_mv2.jpg" alt="Antoine MERLATEAU" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-xs sm:text-sm font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/antoine-merlateau-045390347/" target="_blank" rel="noopener" class="hover:underline">Antoine MERLATEAU</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6. PÔLE SPONSORING (Fond authentique Wix: 7d0a66_ee2bf73e1042400681267cda42d956b0) -->
+<section class="relative py-20 px-6 overflow-hidden">
+  <img src="assets/images/wix/7d0a66_ee2bf73e1042400681267cda42d956b0_mv2.jpg" alt="Fond Pôle Sponsoring" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-neutral-900/85 backdrop-blur-[1px]"></div>
+
+  <div class="relative z-10 max-w-6xl mx-auto space-y-12 text-center">
+    <div class="inline-block border-2 border-black bg-white/90 backdrop-blur-sm px-10 py-2.5 rounded-2xl shadow-sm">
+      <h2 class="text-2xl sm:text-3xl font-black font-impact tracking-wider uppercase text-black">PÔLE SPONSORING</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+      <!-- Corentin ECHARDEL -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_4f1f12a6c0f14591aa9b0a6ad45fb977_mv2.jpg" alt="Corentin ECHARDEL" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-sm sm:text-base font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/corentin-echardel/" target="_blank" rel="noopener" class="hover:underline">Corentin ECHARDEL</a>
+        </p>
+      </div>
+
+      <!-- Micah BARTHELEMY -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_ff6c73d18bf248ea8f679baccf817d60_mv2.jpg" alt="Micah BARTHELEMY" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-sm sm:text-base font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/micah-barthelemy-4819212b7/" target="_blank" rel="noopener" class="hover:underline">Micah BARTHELEMY</a>
+        </p>
+      </div>
+
+      <!-- Axel PLAIS -->
+      <div class="space-y-3">
+        <div class="rounded-2xl overflow-hidden border-2 border-black/80 aspect-[3/4] shadow-md bg-neutral-100">
+          <img src="assets/images/wix/7d0a66_a812cf144f0c4f938ed011cfcf808bdd_mv2.jpg" alt="Axel PLAIS" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        </div>
+        <p class="font-bold text-sm sm:text-base font-impact tracking-wide uppercase text-white">
+          <a href="https://www.linkedin.com/in/axel-plais-408740374/" target="_blank" rel="noopener" class="hover:underline">Axel PLAIS</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  </main>
+    <!-- Footer (Blanc, texte noir, 2 colonnes, logo à droite) -->
+  <footer class="bg-[#FFFFFF] border-t border-gray-100 py-16 text-black mt-auto font-poppins">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Gauche -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="font-bold text-sm tracking-wide uppercase">SUIVEZ-NOUS</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.instagram.com/hyce_estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="Instagram">
+                <img src="assets/images/wix/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.linkedin.com/company/hyce-estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="LinkedIn">
+                <img src="assets/images/wix/aa0402eb9ba2430d9d0620b59556efca.png" alt="LinkedIn" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.tiktok.com/@hyce_estaca" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="TikTok">
+                <img src="assets/images/wix/11062b_4b88b89fe4694d949be4919c81f194b4_mv2.png" alt="TikTok" class="w-4 h-4 invert brightness-0">
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-1 text-sm font-light">
+            <p><span class="font-semibold text-black">E-mail :</span> &nbsp; <a href="mailto:Projet.hyce@estaca.eu" class="hover:underline text-gray-800">Projet.hyce@estaca.eu</a></p>
+            <p><span class="font-semibold text-black">Adresse :</span> &nbsp; <span class="text-gray-800">Rue Georges Charpak, 53000 Laval</span></p>
+          </div>
+
+          <div class="pt-2">
+            <p class="font-bold text-sm mb-3">Abonnez-vous à notre newsletter !</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" class="flex max-w-sm">
+              <input type="email" placeholder="E-mail" required class="flex-grow px-4 py-2 border border-black rounded-l-full text-xs focus:outline-none font-poppins">
+              <button type="submit" class="bg-black text-white px-5 py-2 rounded-r-full text-xs font-semibold hover:bg-neutral-800 transition font-poppins">S'abonner</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Colonne Droite: Logo HYCE Noir -->
+        <div class="flex justify-center md:justify-end">
+          <img src="assets/images/wix/7d0a66_cd7d50c504b2476c929c837ff3b37d3d_mv2.png" alt="HYCE" class="h-32 sm:h-40 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+

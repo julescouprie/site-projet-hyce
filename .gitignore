@@ -1,0 +1,20 @@
+# Fichiers et dossiers sources volumineux non utilisés sur le site web
+assets/images/photos/
+assets/images/pieces/
+assets/images/site/
+assets/images/optimized/
+assets/images/illustrations/
+assets/images/banners/
+assets/images/logo/
+Photo site/
+Photos/
+PDF Recherches/
+boutique hyce/
+design/
+_old_ai_drafts/
+
+# Fichiers OS et temporaires
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp

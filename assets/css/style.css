@@ -1,0 +1,270 @@
+/* ==========================================================================
+   PROJET HYCE - Style officiel
+   Charte graphique :
+   - Noir profond : #090A0F / #000000
+   - Carte / Dark Surface : #12141F / #181B2B
+   - Orange HYCE : #FF5500
+   - Bleu HYCE / Hydrogène : #1010FF / #2563EB / #00D4FF
+   - Blanc : #FFFFFF
+   - Typographie : Poppins, sans-serif
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&display=swap');
+
+:root {
+  --hyce-black: #08090E;
+  --hyce-card: #11131E;
+  --hyce-card-hover: #161928;
+  --hyce-border: rgba(255, 255, 255, 0.08);
+  --hyce-border-accent: rgba(255, 85, 0, 0.3);
+  --hyce-orange: #FF5500;
+  --hyce-orange-glow: rgba(255, 85, 0, 0.4);
+  --hyce-blue: #1010FF;
+  --hyce-cyan: #00D4FF;
+  --hyce-text: #F3F4F6;
+  --hyce-muted: #9CA3AF;
+  --font-main: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-main);
+  background-color: var(--hyce-black);
+  color: var(--hyce-text);
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--hyce-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+/* Scrollbar stylisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #08090E;
+}
+::-webkit-scrollbar-thumb {
+  background: #23273C;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--hyce-orange);
+}
+
+/* Glassmorphism & Cards */
+.hyce-card {
+  background: var(--hyce-card);
+  border: 1px solid var(--hyce-border);
+  border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.hyce-card:hover {
+  background: var(--hyce-card-hover);
+  border-color: var(--hyce-border-accent);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px -10px rgba(0, 0, 0, 0.5), 0 0 20px -5px var(--hyce-orange-glow);
+}
+
+.glass-nav {
+  background: rgba(8, 9, 14, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--hyce-border);
+}
+
+/* Boutons personnalisés */
+.btn-hyce-orange {
+  background: linear-gradient(135deg, #FF6A1A 0%, #FF5500 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(255, 85, 0, 0.3);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-hyce-orange:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(255, 85, 0, 0.5);
+  background: linear-gradient(135deg, #FF7B33 0%, #FF5500 100%);
+  color: #FFFFFF;
+}
+
+.btn-hyce-outline {
+  background: transparent;
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn-hyce-outline:hover {
+  border-color: var(--hyce-orange);
+  background: rgba(255, 85, 0, 0.1);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+.btn-hyce-blue {
+  background: linear-gradient(135deg, #2563EB 0%, #1010FF 100%);
+  color: #FFFFFF;
+  font-weight: 600;
+  padding: 12px 28px;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 15px rgba(16, 16, 255, 0.3);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-hyce-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 16, 255, 0.5);
+  color: #FFFFFF;
+}
+
+/* Badges */
+.badge-orange {
+  background: rgba(255, 85, 0, 0.15);
+  color: #FF7733;
+  border: 1px solid rgba(255, 85, 0, 0.3);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge-blue {
+  background: rgba(0, 212, 255, 0.12);
+  color: #00D4FF;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  padding: 4px 14px;
+  border-radius: 9999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Gradients text */
+.text-gradient-orange {
+  background: linear-gradient(135deg, #FFFFFF 20%, #FFA26B 60%, #FF5500 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-blue {
+  background: linear-gradient(135deg, #FFFFFF 20%, #60A5FA 60%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Glowing effects */
+.glow-orange {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(255, 85, 0, 0.15) 0%, rgba(255, 85, 0, 0) 70%);
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(40px);
+}
+
+.glow-blue {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: radial-gradient(circle, rgba(16, 16, 255, 0.15) 0%, rgba(0, 212, 255, 0) 70%);
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(50px);
+}
+
+/* Racing line decoration */
+.racing-stripe {
+  height: 4px;
+  background: linear-gradient(90deg, #1010FF 0%, #FF5500 50%, transparent 100%);
+  width: 80px;
+  border-radius: 2px;
+}
+
+/* Nav dropdowns */
+.dropdown-menu {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.dropdown-parent:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Hero background animation */
+.hero-mesh {
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(255, 85, 0, 0.12) 0%, transparent 40%),
+    radial-gradient(circle at 85% 70%, rgba(16, 16, 255, 0.12) 0%, transparent 40%),
+    #08090E;
+}
+
+/* Responsive iframe */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid var(--hyce-border);
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

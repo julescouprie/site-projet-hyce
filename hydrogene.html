@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hydrogène | Projet HYCE</title>
+  <link rel="icon" type="image/png" href="assets/images/wix/7d0a66_ecf03087a92f4b86992048cc762e46ee_mv2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    html, body, * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-impact {
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-white text-black flex flex-col min-h-screen font-poppins">
+  <!-- Navigation Header (Blanc, liens noirs, bouton noir) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFFFF] shadow-sm transition-all h-[75px] flex items-center">
+    <div class="max-w-7xl w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <!-- Logo HYCE Noir -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="Projet HYCE" class="h-10 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation (Sans Boutique) -->
+      <nav class="hidden lg:flex items-center gap-8 text-[#000000] text-[15px] font-medium font-poppins">
+        <!-- Dropdown Nos recherches -->
+        <div class="relative group py-2">
+          <a href="nos-recherches.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Nos recherches</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="nos-recherches.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Nos recherches (Vue d'ensemble)</a>
+            <a href="fonctionnement-d-un-moteur.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Fonctionnement d'un moteur</a>
+            <a href="les-defis-techniques.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les défis techniques</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Notre équipe -->
+        <div class="relative group py-2">
+          <a href="notre-equipe.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Notre équipe</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-44 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="estaca.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">ESTACA</a>
+          </div>
+        </div>
+
+        <a href="partenaires.html" class="hover:text-[#008AFC] transition-colors ">Partenaires</a>
+
+        <!-- Dropdown Hydrogène -->
+        <div class="relative group py-2">
+          <a href="hydrogene.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer text-[#008AFC] font-semibold">
+            <span>Hydrogène</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="hydrogene.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Pourquoi l'hydrogène ?</a>
+            <a href="sa-creation.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sa création</a>
+            <a href="les-avantages.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les avantages</a>
+            <a href="une-energie-d-avenir.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Une énergie d'avenir ?</a>
+            <a href="securite.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sécurité</a>
+            <a href="marche.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Marché</a>
+          </div>
+        </div>
+
+        <a href="autres-projets.html" class="hover:text-[#008AFC] transition-colors ">Autres projets</a>
+      </nav>
+
+      <!-- CTA Button Nous contacter (Pillule noire originale) -->
+      <div class="hidden lg:flex items-center">
+        <a href="contact.html" class="bg-[#000000] text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition-all shadow-sm font-poppins">
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Burger Mobile -->
+      <button id="burger-btn" class="lg:hidden p-2 text-black" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white text-black z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="h-8">
+        <button id="close-menu-btn" class="text-gray-500 hover:text-black text-2xl">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-3 mt-6 text-sm font-medium font-poppins">
+        <a href="index.html" class="py-2 border-b border-gray-100 text-black">Accueil</a>
+        <a href="nos-recherches.html" class="py-2 border-b border-gray-100 text-black">Nos recherches</a>
+        <a href="fonctionnement-d-un-moteur.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Fonctionnement d'un moteur</a>
+        <a href="les-defis-techniques.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les défis techniques</a>
+        <a href="notre-equipe.html" class="py-2 border-b border-gray-100 text-black">Notre équipe</a>
+        <a href="estaca.html" class="py-2 border-b border-gray-100 text-black">ESTACA</a>
+        <a href="partenaires.html" class="py-2 border-b border-gray-100 text-black">Partenaires</a>
+        <a href="hydrogene.html" class="py-2 border-b border-gray-100 text-black">Hydrogène</a>
+        <a href="sa-creation.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sa création</a>
+        <a href="les-avantages.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les avantages</a>
+        <a href="une-energie-d-avenir.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Une énergie d'avenir ?</a>
+        <a href="securite.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sécurité</a>
+        <a href="marche.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Marché</a>
+        <a href="autres-projets.html" class="py-2 border-b border-gray-100 text-black">Autres projets</a>
+        <a href="contact.html" class="py-3 text-black font-semibold">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+  <main class="flex-grow pt-[75px]">
+
+<!-- Carte Bleue Haut : Pourquoi l'hydrogène ? -->
+<section class="max-w-5xl mx-auto px-6 py-12">
+  <div class="bg-[#002AFF] text-white rounded-3xl p-8 sm:p-14 text-center shadow-2xl space-y-6">
+    <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight font-poppins">
+      Pourquoi l'hydrogène ?
+    </h1>
+    <p class="text-base sm:text-lg max-w-3xl mx-auto font-light leading-relaxed text-blue-50 font-poppins">
+      <strong class="font-bold text-white">L'hydrogène</strong> s'impose aujourd'hui comme une énergie capable de répondre aux défis environnementaux, énergétiques et économiques du XXIe siècle. Alors que les industries du transport, de l'énergie et de la mobilité cherchent des solutions durables, l'hydrogène émerge comme une réponse incontournable, avec un potentiel immense.
+    </p>
+  </div>
+</section>
+
+<!-- Grille 3x3 de cartes carrées interactives avec effet Blur + Titre au survol -->
+<section class="max-w-4xl mx-auto px-6 pb-24">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    
+    <!-- 1. Station H2 -> Sa création -->
+    <a href="sa-creation.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_9957435a36754f6b9049b60ac830ecdd_mv2.jpg" alt="Sa création" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Sa création
+        </div>
+      </div>
+    </a>
+
+    <!-- 2. Réservoirs H2 -> Une énergie d'avenir -->
+    <a href="une-energie-d-avenir.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_8457f533778e46ab91127664e816b6b1_mv2.png" alt="Une énergie d'avenir ?" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Une énergie d'avenir ?
+        </div>
+      </div>
+    </a>
+
+    <!-- 3. Encoche Bleue Checkmark -> Les avantages -->
+    <a href="les-avantages.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_75a27955ded94e3993bb8b8ed624e0f3_mv2.png" alt="Les avantages" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Les avantages
+        </div>
+      </div>
+    </a>
+
+    <!-- 4. Moteur -> Fonctionnement d'un moteur -->
+    <a href="fonctionnement-d-un-moteur.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_1f8f3bb97c1b4ac5a624948466bc4fa0_mv2.png" alt="Fonctionnement d'un moteur" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Fonctionnement d'un moteur
+        </div>
+      </div>
+    </a>
+
+    <!-- 5. Centre : Logo HYCE officiel (Fixe) -->
+    <div class="aspect-square rounded-2xl border border-gray-200 bg-white shadow-md flex items-center justify-center p-8">
+      <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="max-h-24 w-auto object-contain">
+    </div>
+
+    <!-- 6. Défis -> Les défis techniques -->
+    <a href="les-defis-techniques.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_a653e5e5f283480eb9a373b76912ae22_mv2.webp" alt="Les défis techniques" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Les défis techniques
+        </div>
+      </div>
+    </a>
+
+    <!-- 7. Bouclier -> Sécurité -->
+    <a href="securite.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_020c634176c2415ba4a916537ad52380_mv2.jpg" alt="Sécurité" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Sécurité
+        </div>
+      </div>
+    </a>
+
+    <!-- 8. Graphique Bourse -> Marché -->
+    <a href="marche.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_561fc1c71c4349e39a4a9556e097b95c_mv2.png" alt="Marché" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Marché
+        </div>
+      </div>
+    </a>
+
+    <!-- 9. Globe terrestre -> Autres projets -->
+    <a href="autres-projets.html" class="group relative block aspect-square rounded-2xl overflow-hidden border border-gray-200 bg-white shadow-md hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1">
+      <img src="assets/images/wix/7d0a66_d106ee7a4f854b8a9963723ea9dbabac_mv2.jpg" alt="Autres projets" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105 group-hover:blur-sm">
+      <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-4">
+        <div class="bg-white/95 text-black px-5 py-3 rounded-xl font-bold font-poppins text-base text-center shadow-xl transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+          Autres projets
+        </div>
+      </div>
+    </a>
+
+  </div>
+</section>
+
+  </main>
+  <!-- Footer (Blanc, texte noir, 2 colonnes, logo à droite) -->
+  <footer class="bg-[#FFFFFF] border-t border-gray-100 py-16 text-black mt-auto font-poppins">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Gauche -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="font-bold text-sm tracking-wide uppercase">SUIVEZ-NOUS</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.instagram.com/hyce_estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="Instagram">
+                <img src="assets/images/wix/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.linkedin.com/company/hyce-estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="LinkedIn">
+                <img src="assets/images/wix/aa0402eb9ba2430d9d0620b59556efca.png" alt="LinkedIn" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.tiktok.com/@hyce_estaca" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="TikTok">
+                <img src="assets/images/wix/11062b_4b88b89fe4694d949be4919c81f194b4_mv2.png" alt="TikTok" class="w-4 h-4 invert brightness-0">
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-1 text-sm font-light">
+            <p><span class="font-semibold text-black">E-mail :</span> &nbsp; <a href="mailto:Projet.hyce@estaca.eu" class="hover:underline text-gray-800">Projet.hyce@estaca.eu</a></p>
+            <p><span class="font-semibold text-black">Adresse :</span> &nbsp; <span class="text-gray-800">Rue Georges Charpak, 53000 Laval</span></p>
+          </div>
+
+          <div class="pt-2">
+            <p class="font-bold text-sm mb-3">Abonnez-vous à notre newsletter !</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" class="flex max-w-sm">
+              <input type="email" placeholder="E-mail" required class="flex-grow px-4 py-2 border border-black rounded-l-full text-xs focus:outline-none font-poppins">
+              <button type="submit" class="bg-black text-white px-5 py-2 rounded-r-full text-xs font-semibold hover:bg-neutral-800 transition font-poppins">S'abonner</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Colonne Droite: Logo HYCE Noir -->
+        <div class="flex justify-center md:justify-end">
+          <img src="assets/images/wix/7d0a66_cd7d50c504b2476c929c837ff3b37d3d_mv2.png" alt="HYCE" class="h-32 sm:h-40 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+

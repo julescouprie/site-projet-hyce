@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autres projets | Projet HYCE</title>
+  <link rel="icon" type="image/png" href="assets/images/wix/7d0a66_ecf03087a92f4b86992048cc762e46ee_mv2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <style>
+    html, body, * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-impact {
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-white text-black flex flex-col min-h-screen">
+    <!-- Navigation Header (Blanc, liens noirs, bouton noir) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFFFF] shadow-sm transition-all h-[75px] flex items-center">
+    <div class="max-w-7xl w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <!-- Logo HYCE Noir -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="Projet HYCE" class="h-10 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation (Sans Boutique) -->
+      <nav class="hidden lg:flex items-center gap-8 text-[#000000] text-[15px] font-medium font-poppins">
+        <!-- Dropdown Nos recherches -->
+        <div class="relative group py-2">
+          <a href="nos-recherches.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Nos recherches</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="nos-recherches.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Nos recherches (Vue d'ensemble)</a>
+            <a href="fonctionnement-d-un-moteur.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Fonctionnement d'un moteur</a>
+            <a href="les-defis-techniques.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les défis techniques</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Notre équipe -->
+        <div class="relative group py-2">
+          <a href="notre-equipe.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Notre équipe</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-44 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="estaca.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">ESTACA</a>
+          </div>
+        </div>
+
+        <a href="partenaires.html" class="hover:text-[#008AFC] transition-colors ">Partenaires</a>
+
+        <!-- Dropdown Hydrogène -->
+        <div class="relative group py-2">
+          <a href="hydrogene.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Hydrogène</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="hydrogene.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Pourquoi l'hydrogène ?</a>
+            <a href="sa-creation.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sa création</a>
+            <a href="les-avantages.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les avantages</a>
+            <a href="une-energie-d-avenir.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Une énergie d'avenir ?</a>
+            <a href="securite.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sécurité</a>
+            <a href="marche.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Marché</a>
+          </div>
+        </div>
+
+        <a href="autres-projets.html" class="hover:text-[#008AFC] transition-colors text-[#008AFC] font-semibold">Autres projets</a>
+      </nav>
+
+      <!-- CTA Button Nous contacter (Pillule noire originale) -->
+      <div class="hidden lg:flex items-center">
+        <a href="contact.html" class="bg-[#000000] text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition-all shadow-sm font-poppins">
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Burger Mobile -->
+      <button id="burger-btn" class="lg:hidden p-2 text-black" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white text-black z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="h-8">
+        <button id="close-menu-btn" class="text-gray-500 hover:text-black text-2xl">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-3 mt-6 text-sm font-medium font-poppins">
+        <a href="index.html" class="py-2 border-b border-gray-100 text-black">Accueil</a>
+        <a href="nos-recherches.html" class="py-2 border-b border-gray-100 text-black">Nos recherches</a>
+        <a href="fonctionnement-d-un-moteur.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Fonctionnement d'un moteur</a>
+        <a href="les-defis-techniques.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les défis techniques</a>
+        <a href="notre-equipe.html" class="py-2 border-b border-gray-100 text-black">Notre équipe</a>
+        <a href="estaca.html" class="py-2 border-b border-gray-100 text-black">ESTACA</a>
+        <a href="partenaires.html" class="py-2 border-b border-gray-100 text-black">Partenaires</a>
+        <a href="hydrogene.html" class="py-2 border-b border-gray-100 text-black">Hydrogène</a>
+        <a href="sa-creation.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sa création</a>
+        <a href="les-avantages.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les avantages</a>
+        <a href="une-energie-d-avenir.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Une énergie d'avenir ?</a>
+        <a href="securite.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sécurité</a>
+        <a href="marche.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Marché</a>
+        <a href="autres-projets.html" class="py-2 border-b border-gray-100 text-black">Autres projets</a>
+        <a href="contact.html" class="py-3 text-black font-semibold">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <main class="flex-grow pt-[75px]">
+
+<!-- Hero Bannière Autres Projets avec Carte Blanche Translucide (Authentique Wix) -->
+<section class="relative w-full h-[550px] overflow-hidden flex items-center justify-center text-center">
+  <img src="assets/images/wix/7d0a66_343c05619ac74b31a38157e8cdc336b0_mv2.webp" alt="Autres projets hydrogène" class="absolute inset-0 w-full h-full object-cover">
+  
+  <div class="relative z-10 px-6 max-w-[980px] w-full mx-auto">
+    <div class="bg-white/90 backdrop-blur-md rounded-[45px] p-8 sm:p-14 shadow-xl border border-white/40">
+      <h1 class="text-3xl sm:text-5xl lg:text-[56px] font-bold text-black font-poppins leading-tight">
+        De nombreux projets !
+      </h1>
+      <p class="text-base sm:text-xl text-neutral-700 font-light max-w-2xl mx-auto leading-relaxed mt-4">
+        HYCE n'est pas le seul projet dans ce secteur. Cette technologie fait l'objet de nombreuses études !
+      </p>
+      <hr class="border-t border-[#707070] my-6 max-w-[900px] mx-auto">
+    </div>
+  </div>
+</section>
+
+<!-- Transition Espace Blanc -->
+<div class="w-full h-[60px] bg-white"></div>
+
+<!-- Contenu des 10 Projets : Bandes Blanches 980px avec Alternance Gauche / Droite -->
+<div class="bg-white text-black space-y-16 pb-24">
+
+  <!-- 1. Alpine bouscule tout (Image Gauche, Texte Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px]">
+        <img src="assets/images/wix/7d0a66_00b0b266fe5d44b390f1ba3375c48bd5_mv2.jpg" alt="Alpine Alpenglow" class="w-full h-full object-cover">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          Alpine bouscule tout
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Dévoilée lors du <strong class="font-bold text-black">Mondial de l’Automobile de Paris en 2024</strong> , l’ALPENGLOW en a fait rougir plus d’un. Dotée d'un moteur V6 de 3,5 L développant 740 ch et atteignant jusqu'à 330 km/h, cette supercar préfigure les futures voitures de sport à hydrogène.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.alpinecars.fr/concept-cars/alpenglow.html" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Toyota, en précurseur (Texte Gauche, Image Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4 order-2 md:order-1">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          Toyota, en précurseur
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          En <strong class="font-bold text-black">2021</strong> , Toyota a présenté sa berline " <strong class="font-bold text-black">GR Corolla H2</strong> ", équipée d’un moteur à combustion interne à hydrogène. La marque japonaise, reconnue pour son avant-gardisme, n’en est pas à son premier projet autour de l’hydrogène.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Leur objectif est de participer aux <strong class="font-bold text-black">24 heures du Mans en 2028</strong> , année où la catégorie hydrogène ouvrira ses portes.
+        </p>
+        <div class="pt-2">
+          <a href="https://media.toyota.fr" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px] order-1 md:order-2">
+        <img src="assets/images/wix/7d0a66_f6098af7e4844b319287593001f8a636_mv2.jpg" alt="Toyota Corolla Hydrogen" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Ligier en première ligne (Image Gauche, Texte Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px]">
+        <img src="assets/images/wix/7d0a66_19e3ab9151144ca7886cd50fa5c513ce_mv2.jpg" alt="Ligier JS2R H2" class="w-full h-full object-cover">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          Ligier en première ligne
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          En collaboration avec <strong class="font-bold text-black">Bosch</strong> , Ligier a développé un prototype nommé <strong class="font-bold text-black">JS2R-H2</strong> , basé sur leur modèle JS2R. Avec son V6 biturbo de 3,0 L délivrant 563 ch, il démontre la viabilité de la technologie hydrogène en compétition automobile d’endurance.
+        </p>
+        <div class="pt-2">
+          <a href="https://ligierautomotive.com" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Une collaboration Made in France (Texte Gauche, Image Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4 order-2 md:order-1">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          Une collaboration Made in France
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Le projet <strong class="font-bold text-black">Mission H24</strong> est sans doute le projet autour de l'hydrogène dont l’industrie française est la plus fière. Équipée d’une pile à combustible de 300 kW et d’un moteur de 872 chevaux, le nouveau prototype atteint des vitesses comparables aux GT3.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Depuis <strong class="font-bold text-black">2018</strong> , l’équipe Mission H24 teste son prototype, accumulant une expérience précieuse pour l’avenir.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.missionh24.fr" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px] order-1 md:order-2">
+        <img src="assets/images/wix/11062b_6d83396e10d74b67bf2cd4517303fd0d_mv2_d_4363_2890_s_4_2.jpg" alt="Mission H24" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. La FIA y croit (Plein Largeur 980px) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="bg-gray-50 rounded-[25px] p-8 sm:p-12 border border-gray-100 space-y-4">
+      <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+        La FIA y croit
+      </h2>
+      <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+        L’ <strong class="font-bold text-black">Extreme H</strong> est une catégorie de sport automobile créée par la FIA et dédiée aux véhicules alimentés à l’hydrogène. Issue de la série <strong class="font-bold text-black">Extreme E</strong> , cette discipline met en avant l’innovation et la durabilité dans les conditions les plus extrêmes de la planète.
+      </p>
+      <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+        L’Extreme H vise à démontrer le potentiel de l’hydrogène comme alternative énergétique dans le sport mécanique mondial.
+      </p>
+      <div class="pt-2">
+        <a href="https://www.extreme-e.com" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+          En savoir plus
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. La Norvège mise sur la navigation (Texte Gauche, Image Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4 order-2 md:order-1">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          La Norvège mise sur la navigation
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          <strong class="font-bold text-black">Maersk</strong> , le géant maritime, investit massivement dans l’hydrogène afin de décarboner ses porte-conteneurs géants. Certains de leurs navires fonctionnent déjà uniquement au <strong class="font-bold text-black">méthanol vert</strong> , un carburant obtenu à l’aide d'hydrogène vert.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Un porte-conteneurs de leur flotte économise près de 280 tonnes de CO2 par jour, soit l’équivalent des émissions annuelles de dizaines de voitures.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.maersk.com" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px] order-1 md:order-2">
+        <img src="assets/images/wix/11062b_4e6fd7f022c4422a85d4de58cb28ffec_mv2.jpg" alt="Navigation Hydrogène" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. La Namibie : All in sur l’hydrogène (Image Gauche, Texte Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px]">
+        <img src="assets/images/wix/11062b_c68182fbfc224eee8aa7825605dcb461_mv2.jpg" alt="Panneaux solaires Namibie" class="w-full h-full object-cover">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          La Namibie : All in sur l’hydrogène
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          La <strong class="font-bold text-black">Namibie</strong> possède aujourd’hui des territoires très propices au développement des énergies renouvelables grâce à son ensoleillement continu et ses vents constants.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Conscients de cet atout, le gouvernement namibien et ses partenaires ont investi plus de 10 milliards de dollars dans le projet <strong class="font-bold text-black">Hyphen</strong> . Ce projet vise à produire de l’hydrogène vert ainsi que de l’ammoniac, grâce à des énergies renouvelables.
+        </p>
+        <div class="pt-2">
+          <a href="https://hyphenafrica.com" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. L’Allemagne : Une stratégie bien rodée (Texte Gauche, Image Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4 order-2 md:order-1">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          L’Allemagne : Une stratégie bien rodée
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          L’ <strong class="font-bold text-black">Allemagne</strong> , consciente que développer les énergies renouvelables sur son territoire est une mission complexe à grande échelle, a choisi de diversifier ses approvisionnements.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Un projet clé est le pipeline <strong class="font-bold text-black">H2Med</strong> , destiné à connecter l'Espagne et le Portugal à l'Allemagne via la France. D’autres pipelines permettraient à l’Allemagne d’importer son hydrogène vert à grande échelle.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.bmwk.de" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px] order-1 md:order-2">
+        <img src="assets/images/wix/11062b_80b8bc47a4a745029c1e73074138981e_mv2.jpg" alt="Pipelines hydrogène" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. La France : Le plus grand puits (Image Gauche, Texte Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px]">
+        <img src="assets/images/wix/11062b_51d84f5dac0d4155a4ad2c7e8a7f7e4b_mv2.jpg" alt="Puits hydrogène naturel France" class="w-full h-full object-cover">
+      </div>
+      <div class="space-y-4">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          La France : Le plus grand puits d’hydrogène naturel découvert
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          En <strong class="font-bold text-black">2023</strong> , le plus grand puits d’ <strong class="font-bold text-black">hydrogène naturel</strong> a été découvert en France, avec une capacité estimée à près de 46 millions de tonnes.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Ce gisement représente un grand avantage pour la France. L’État français prévoit d’investir près de <strong class="font-bold text-black">9 milliards d’euros d’ici 2030</strong> dans la filière hydrogène décarboné.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.gouvernement.fr" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. Le Maroc : Un pays prometteur (Texte Gauche, Image Droite) -->
+  <section class="max-w-[980px] mx-auto px-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div class="space-y-4 order-2 md:order-1">
+        <h2 class="text-2xl sm:text-3xl font-bold font-poppins text-black">
+          Le Maroc : Un pays prometteur
+        </h2>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Le <strong class="font-bold text-black">Maroc</strong> , qui s’appuie déjà sur ses ressources naturelles pour produire de l’énergie, a construit la plus grande centrale solaire thermodynamique au monde.
+        </p>
+        <p class="text-sm sm:text-base font-light font-poppins leading-relaxed text-neutral-700">
+          Aujourd’hui, le Maroc mise massivement sur l’hydrogène. Selon les spécialistes, le Maroc pourrait subvenir à une part déterminante des besoins mondiaux.
+        </p>
+        <div class="pt-2">
+          <a href="https://www.masen.ma" target="_blank" rel="noopener" class="inline-block bg-black text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition shadow-sm">
+            En savoir plus
+          </a>
+        </div>
+      </div>
+      <div class="rounded-[25px] overflow-hidden shadow-lg border border-gray-100 h-[340px] order-1 md:order-2">
+        <img src="assets/images/wix/11062b_cacd12955a894229a4f83e0cedaa6a6b_mv2.jpg" alt="Centrale solaire Maroc" class="w-full h-full object-cover">
+      </div>
+    </div>
+  </section>
+
+</div>
+
+  </main>
+    <!-- Footer (Blanc, texte noir, 2 colonnes, logo à droite) -->
+  <footer class="bg-[#FFFFFF] border-t border-gray-100 py-16 text-black mt-auto font-poppins">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Gauche -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="font-bold text-sm tracking-wide uppercase">SUIVEZ-NOUS</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.instagram.com/hyce_estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="Instagram">
+                <img src="assets/images/wix/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.linkedin.com/company/hyce-estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="LinkedIn">
+                <img src="assets/images/wix/aa0402eb9ba2430d9d0620b59556efca.png" alt="LinkedIn" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.tiktok.com/@hyce_estaca" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="TikTok">
+                <img src="assets/images/wix/11062b_4b88b89fe4694d949be4919c81f194b4_mv2.png" alt="TikTok" class="w-4 h-4 invert brightness-0">
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-1 text-sm font-light">
+            <p><span class="font-semibold text-black">E-mail :</span> &nbsp; <a href="mailto:Projet.hyce@estaca.eu" class="hover:underline text-gray-800">Projet.hyce@estaca.eu</a></p>
+            <p><span class="font-semibold text-black">Adresse :</span> &nbsp; <span class="text-gray-800">Rue Georges Charpak, 53000 Laval</span></p>
+          </div>
+
+          <div class="pt-2">
+            <p class="font-bold text-sm mb-3">Abonnez-vous à notre newsletter !</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" class="flex max-w-sm">
+              <input type="email" placeholder="E-mail" required class="flex-grow px-4 py-2 border border-black rounded-l-full text-xs focus:outline-none font-poppins">
+              <button type="submit" class="bg-black text-white px-5 py-2 rounded-r-full text-xs font-semibold hover:bg-neutral-800 transition font-poppins">S'abonner</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Colonne Droite: Logo HYCE Noir -->
+        <div class="flex justify-center md:justify-end">
+          <img src="assets/images/wix/7d0a66_cd7d50c504b2476c929c837ff3b37d3d_mv2.png" alt="HYCE" class="h-32 sm:h-40 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+

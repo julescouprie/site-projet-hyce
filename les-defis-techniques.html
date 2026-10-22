@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Les défis techniques | Projet HYCE</title>
+  <link rel="icon" type="image/png" href="assets/images/wix/7d0a66_ecf03087a92f4b86992048cc762e46ee_mv2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&family=Montserrat:wght@800;900&display=swap" rel="stylesheet">
+  <style>
+    html, body, * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-impact {
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-white text-black flex flex-col min-h-screen">
+    <!-- Navigation Header (Blanc, liens noirs, bouton noir) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFFFF] shadow-sm transition-all h-[75px] flex items-center">
+    <div class="max-w-7xl w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <!-- Logo HYCE Noir -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="Projet HYCE" class="h-10 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation (Sans Boutique) -->
+      <nav class="hidden lg:flex items-center gap-8 text-[#000000] text-[15px] font-medium font-poppins">
+        <!-- Dropdown Nos recherches -->
+        <div class="relative group py-2">
+          <a href="nos-recherches.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer text-[#008AFC] font-semibold">
+            <span>Nos recherches</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="nos-recherches.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Nos recherches (Vue d'ensemble)</a>
+            <a href="fonctionnement-d-un-moteur.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Fonctionnement d'un moteur</a>
+            <a href="les-defis-techniques.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les défis techniques</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Notre équipe -->
+        <div class="relative group py-2">
+          <a href="notre-equipe.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Notre équipe</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-44 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="estaca.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">ESTACA</a>
+          </div>
+        </div>
+
+        <a href="partenaires.html" class="hover:text-[#008AFC] transition-colors ">Partenaires</a>
+
+        <!-- Dropdown Hydrogène -->
+        <div class="relative group py-2">
+          <a href="hydrogene.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Hydrogène</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="hydrogene.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Pourquoi l'hydrogène ?</a>
+            <a href="sa-creation.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sa création</a>
+            <a href="les-avantages.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les avantages</a>
+            <a href="une-energie-d-avenir.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Une énergie d'avenir ?</a>
+            <a href="securite.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sécurité</a>
+            <a href="marche.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Marché</a>
+          </div>
+        </div>
+
+        <a href="autres-projets.html" class="hover:text-[#008AFC] transition-colors ">Autres projets</a>
+      </nav>
+
+      <!-- CTA Button Nous contacter (Pillule noire originale) -->
+      <div class="hidden lg:flex items-center">
+        <a href="contact.html" class="bg-[#000000] text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition-all shadow-sm font-poppins">
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Burger Mobile -->
+      <button id="burger-btn" class="lg:hidden p-2 text-black" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white text-black z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="h-8">
+        <button id="close-menu-btn" class="text-gray-500 hover:text-black text-2xl">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-3 mt-6 text-sm font-medium font-poppins">
+        <a href="index.html" class="py-2 border-b border-gray-100 text-black">Accueil</a>
+        <a href="nos-recherches.html" class="py-2 border-b border-gray-100 text-black">Nos recherches</a>
+        <a href="fonctionnement-d-un-moteur.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Fonctionnement d'un moteur</a>
+        <a href="les-defis-techniques.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les défis techniques</a>
+        <a href="notre-equipe.html" class="py-2 border-b border-gray-100 text-black">Notre équipe</a>
+        <a href="estaca.html" class="py-2 border-b border-gray-100 text-black">ESTACA</a>
+        <a href="partenaires.html" class="py-2 border-b border-gray-100 text-black">Partenaires</a>
+        <a href="hydrogene.html" class="py-2 border-b border-gray-100 text-black">Hydrogène</a>
+        <a href="sa-creation.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sa création</a>
+        <a href="les-avantages.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les avantages</a>
+        <a href="une-energie-d-avenir.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Une énergie d'avenir ?</a>
+        <a href="securite.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sécurité</a>
+        <a href="marche.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Marché</a>
+        <a href="autres-projets.html" class="py-2 border-b border-gray-100 text-black">Autres projets</a>
+        <a href="contact.html" class="py-3 text-black font-semibold">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <main class="flex-grow pt-[75px]">
+
+<!-- Hero Bannière Pistons avec Carte Blanche Translucide (Authentique Wix comp-m7z7bo77) -->
+<section class="relative w-full h-[678px] overflow-hidden flex items-center justify-center text-center bg-black">
+  <img src="assets/images/wix/7d0a66_f006e290464840278188c2a38a379d54_mv2.jpg" alt="Pistons" class="absolute inset-0 w-full h-full object-cover">
+  
+  <div class="relative z-10 px-6 max-w-[980px] w-full mx-auto">
+    <div class="bg-white/80 backdrop-blur-md rounded-[45px] p-8 sm:p-14 shadow-xl border border-white/40">
+      <h1 class="text-3xl sm:text-5xl lg:text-[56px] font-bold text-[#1010FF] font-poppins leading-tight">
+        Quels sont nos défis techniques ?
+      </h1>
+      <p class="text-base sm:text-xl text-black font-light max-w-2xl mx-auto leading-relaxed mt-4">
+        L’objectif du record sportif nécessite des performances maximales. Il est donc crucial d’atteindre un rendement énergétique optimal.
+      </p>
+      <hr class="border-t border-[#707070] my-6 max-w-[900px] mx-auto">
+    </div>
+  </div>
+</section>
+
+<!-- Section Titre Blanc : Comparaison des rendements (120px Wix) -->
+<section class="bg-white py-12 px-6 text-center">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl sm:text-[40px] font-bold font-poppins text-[#1010FF]">
+      Comparaison des rendements
+    </h2>
+  </div>
+</section>
+
+<!-- Dégradé Blanc vers Bleu Royal #1010FF (comp-m89578l3) -->
+<div class="w-full h-[135px]" style="background: linear-gradient(180deg, #FFFFFF 0%, #1010FF 100%);"></div>
+
+<!-- Section Bleu Royal #1010FF : 3 Colonnes de Rendements -->
+<section class="w-full bg-[#1010FF] py-8 px-6 text-white text-center">
+  <div class="max-w-5xl mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 py-6 items-center">
+      
+      <!-- Item 1 : MCI classique -->
+      <div class="space-y-3">
+        <div class="w-16 h-16 mx-auto rounded-full bg-white/10 flex items-center justify-center">
+          <svg class="w-8 h-8 text-[#E8E6E6]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9v-2h2v2zm0-4H9V7h2v5zm4 4h-2v-6h2v6zm0-8h-2V7h2v1z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold font-poppins text-white uppercase tracking-wide">MCI classique</h3>
+        <p class="text-4xl sm:text-5xl font-black font-impact text-white">30 %</p>
+      </div>
+
+      <!-- Item 2 : PAC -->
+      <div class="space-y-3">
+        <div class="w-16 h-16 mx-auto rounded-full bg-white/10 flex items-center justify-center">
+          <svg class="w-8 h-8 text-[#E8E6E6]" fill="currentColor" viewBox="0 0 24 24"><path d="M13 2.05v3.03c3.39.49 6 3.39 6 6.92 0 .9-.18 1.75-.48 2.54l2.6 1.53c.56-1.24.88-2.62.88-4.07 0-5.18-3.95-9.45-9-9.95zM12 19c-3.87 0-7-3.13-7-7 0-3.53 2.61-6.43 6-6.92V2.05c-5.05.5-9 4.76-9 9.95 0 5.52 4.47 10 9.99 10 3.31 0 6.24-1.61 8.04-4.09l-2.5-1.46C16.2 17.8 14.24 19 12 19z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold font-poppins text-white uppercase tracking-wide">PAC</h3>
+        <p class="text-4xl sm:text-5xl font-black font-impact text-white">40% à 60%</p>
+      </div>
+
+      <!-- Item 3 : MCI Hydrogène -->
+      <div class="space-y-3">
+        <div class="w-16 h-16 mx-auto rounded-full bg-white/10 flex items-center justify-center">
+          <svg class="w-8 h-8 text-[#E8E6E6]" fill="currentColor" viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96zM19 18H6c-2.21 0-4-1.79-4-4 0-2.05 1.53-3.76 3.56-3.97l1.07-.11.5-.95C8.08 7.14 9.94 6 12 6c2.62 0 4.88 1.86 5.39 4.43l.3 1.5 1.53.11c1.56.1 2.78 1.41 2.78 2.96 0 1.65-1.35 3-3 3z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold font-poppins text-white uppercase tracking-wide">MCI Hydrogène</h3>
+        <p class="text-4xl sm:text-5xl font-black font-impact text-white">40%</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Dégradé Bleu Royal vers Blanc (comp-m8959h72) -->
+<div class="w-full h-[135px]" style="background: linear-gradient(180deg, #1010FF 0%, #FFFFFF 100%);"></div>
+
+<!-- Section Texte Explicatif sur Fond Blanc -->
+<section class="bg-white py-12 px-6 text-center">
+  <div class="max-w-4xl mx-auto space-y-8">
+    <p class="text-base sm:text-lg font-light leading-relaxed text-neutral-800">
+      Le remplacement ou le renforcement des <strong class="font-bold text-black">composants du moteur</strong> (joints, chambres de combustion, pistons, bielles) est <strong class="font-bold text-black">nécessaire</strong> pour résister aux propriétés spécifiques de l’hydrogène, telles que sa faible densité énergétique volumique et sa tendance à entraîner une combustion plus chaude. Le <strong class="font-bold text-black">système de stockage</strong> du carburant doit également être modifié, de même que l’ajout d’un <strong class="font-bold text-black">système d’admission</strong> spécialement conçu pour acheminer l’hydrogène du réservoir jusqu’au moteur.
+    </p>
+
+    <!-- Titre Liste des modifications (Authentique Wix : 56px Bold) -->
+    <h2 class="text-3xl sm:text-5xl font-bold font-poppins text-[#1010FF] pt-6">
+      Liste des modifications
+    </h2>
+  </div>
+</section>
+
+<!-- Grille des Modifications Asymétrique Identique Wix (980px max) -->
+<section class="bg-white pb-24 px-6">
+  <div class="max-w-[980px] mx-auto space-y-6">
+    
+    <!-- Ligne 1 : 3 Colonnes de 325px -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+      
+      <!-- 1. Système d'injection -->
+      <div class="bg-[#1010FF] text-white rounded-[20px] p-7 shadow-lg flex flex-col justify-start">
+        <h3 class="text-xl font-bold font-poppins mb-3">Système d'injection</h3>
+        <p class="text-sm font-poppins font-light leading-relaxed text-blue-50">
+          Le moteur doit être adapté pour permettre une combustion homogène et efficace de l’hydrogène, qui nécessite des pressions d’injection différentes et une alimentation <strong class="font-bold text-white">précise</strong> .
+        </p>
+      </div>
+
+      <!-- 2. Changement de l’ECU -->
+      <div class="bg-[#1010FF] text-white rounded-[20px] p-7 shadow-lg flex flex-col justify-start">
+        <h3 class="text-xl font-bold font-poppins mb-3 leading-snug">Changement de l’unité de contrôle électronique (ECU)</h3>
+        <p class="text-sm font-poppins font-light leading-relaxed text-blue-50">
+          Les modifications apportées au véhicule nécessitent un changement de l’ECU afin de permettre au véhicule de traiter correctement toutes les données fournies par l’ensemble des capteurs installés.
+        </p>
+      </div>
+
+      <!-- 3. Système d'allumage -->
+      <div class="bg-[#1010FF] text-white rounded-[20px] p-7 shadow-lg flex flex-col justify-start">
+        <h3 class="text-xl font-bold font-poppins mb-3">Système d'allumage</h3>
+        <p class="text-sm font-poppins font-light leading-relaxed text-blue-50">
+          L’hydrogène présente une plage d’inflammabilité beaucoup plus large que l’essence, ce qui nécessite un réglage précis des systèmes d’allumage pour éviter le phénomène de <strong class="font-bold text-white">"détonation prématurée"</strong>.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Ligne 2 : 2 Colonnes de 480px -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+      
+      <!-- 4. Ajout de capteurs -->
+      <div class="bg-[#1010FF] text-white rounded-[20px] p-8 shadow-lg flex flex-col justify-start">
+        <h3 class="text-2xl font-bold font-poppins mb-3">Ajout de capteurs</h3>
+        <p class="text-sm font-poppins font-light leading-relaxed text-blue-50">
+          En raison des caractéristiques particulières de l’hydrogène, un réseau de capteurs est nécessaire pour surveiller en temps réel le comportement de ce carburant à chaque instant.
+        </p>
+      </div>
+
+      <!-- 5. Système d'échappement -->
+      <div class="bg-[#1010FF] text-white rounded-[20px] p-8 shadow-lg flex flex-col justify-start">
+        <h3 class="text-2xl font-bold font-poppins mb-3">Système d'échappement</h3>
+        <p class="text-sm font-poppins font-light leading-relaxed text-blue-50">
+          La combustion de l’hydrogène ne rejette pas les mêmes produits que les carburants traditionnels. Il est donc primordial de modifier le système d’échappement afin qu’il puisse filtrer au mieux les produits liés et ne rejeter que de l’eau.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Ligne 3 : 1 Carte Centrée (Et bien d'autres ...) -->
+    <div class="max-w-[400px] mx-auto pt-4">
+      <div class="bg-[#1010FF] text-white rounded-[20px] p-6 shadow-lg text-center">
+        <h3 class="text-xl font-bold font-poppins">Et bien d'autres ...</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+    <!-- Footer (Blanc, texte noir, 2 colonnes, logo à droite) -->
+  <footer class="bg-[#FFFFFF] border-t border-gray-100 py-16 text-black mt-auto font-poppins">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Gauche -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="font-bold text-sm tracking-wide uppercase">SUIVEZ-NOUS</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.instagram.com/hyce_estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="Instagram">
+                <img src="assets/images/wix/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.linkedin.com/company/hyce-estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="LinkedIn">
+                <img src="assets/images/wix/aa0402eb9ba2430d9d0620b59556efca.png" alt="LinkedIn" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.tiktok.com/@hyce_estaca" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="TikTok">
+                <img src="assets/images/wix/11062b_4b88b89fe4694d949be4919c81f194b4_mv2.png" alt="TikTok" class="w-4 h-4 invert brightness-0">
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-1 text-sm font-light">
+            <p><span class="font-semibold text-black">E-mail :</span> &nbsp; <a href="mailto:Projet.hyce@estaca.eu" class="hover:underline text-gray-800">Projet.hyce@estaca.eu</a></p>
+            <p><span class="font-semibold text-black">Adresse :</span> &nbsp; <span class="text-gray-800">Rue Georges Charpak, 53000 Laval</span></p>
+          </div>
+
+          <div class="pt-2">
+            <p class="font-bold text-sm mb-3">Abonnez-vous à notre newsletter !</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" class="flex max-w-sm">
+              <input type="email" placeholder="E-mail" required class="flex-grow px-4 py-2 border border-black rounded-l-full text-xs focus:outline-none font-poppins">
+              <button type="submit" class="bg-black text-white px-5 py-2 rounded-r-full text-xs font-semibold hover:bg-neutral-800 transition font-poppins">S'abonner</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Colonne Droite: Logo HYCE Noir -->
+        <div class="flex justify-center md:justify-end">
+          <img src="assets/images/wix/7d0a66_cd7d50c504b2476c929c837ff3b37d3d_mv2.png" alt="HYCE" class="h-32 sm:h-40 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+

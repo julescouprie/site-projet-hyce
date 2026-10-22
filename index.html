@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil | Projet HYCE</title>
+  <link rel="icon" type="image/png" href="assets/images/wix/7d0a66_ecf03087a92f4b86992048cc762e46ee_mv2.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <style>
+    html, body, * {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-poppins {
+      font-family: 'Poppins', sans-serif !important;
+    }
+    .font-impact {
+      font-family: 'Poppins', sans-serif !important;
+      font-weight: 800 !important;
+    }
+  </style>
+</head>
+<body class="bg-[#000000] text-white flex flex-col min-h-screen">
+  
+    <!-- Navigation Header (Blanc, liens noirs, bouton noir) -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#FFFFFF] shadow-sm transition-all h-[75px] flex items-center">
+    <div class="max-w-7xl w-full mx-auto px-6 sm:px-8 flex items-center justify-between">
+      <!-- Logo HYCE Noir -->
+      <a href="index.html" class="flex items-center">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="Projet HYCE" class="h-10 sm:h-11 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation (Sans Boutique) -->
+      <nav class="hidden lg:flex items-center gap-8 text-[#000000] text-[15px] font-medium font-poppins">
+        <!-- Dropdown Nos recherches -->
+        <div class="relative group py-2">
+          <a href="nos-recherches.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Nos recherches</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-64 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="nos-recherches.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Nos recherches (Vue d'ensemble)</a>
+            <a href="fonctionnement-d-un-moteur.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Fonctionnement d'un moteur</a>
+            <a href="les-defis-techniques.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les défis techniques</a>
+          </div>
+        </div>
+
+        <!-- Dropdown Notre équipe -->
+        <div class="relative group py-2">
+          <a href="notre-equipe.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Notre équipe</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-44 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="estaca.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">ESTACA</a>
+          </div>
+        </div>
+
+        <a href="partenaires.html" class="hover:text-[#008AFC] transition-colors ">Partenaires</a>
+
+        <!-- Dropdown Hydrogène -->
+        <div class="relative group py-2">
+          <a href="hydrogene.html" class="flex items-center gap-1.5 hover:text-[#008AFC] transition-colors cursor-pointer ">
+            <span>Hydrogène</span>
+            <svg class="w-3.5 h-3.5" viewBox="0 0 16 11" fill="currentColor"><path d="M8 10.5L16 1.86193L14.7387 0.5L8 7.77613L1.26133 0.499999L-5.95321e-08 1.86193L8 10.5Z"/></svg>
+          </a>
+          <div class="absolute top-full left-0 w-56 bg-white border border-gray-100 rounded-xl shadow-xl p-2 hidden group-hover:flex flex-col gap-1 z-50">
+            <a href="hydrogene.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Pourquoi l'hydrogène ?</a>
+            <a href="sa-creation.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sa création</a>
+            <a href="les-avantages.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Les avantages</a>
+            <a href="une-energie-d-avenir.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Une énergie d'avenir ?</a>
+            <a href="securite.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Sécurité</a>
+            <a href="marche.html" class="px-3 py-2 text-xs text-gray-700 hover:bg-gray-50 hover:text-[#008AFC] rounded-lg transition-colors font-poppins">Marché</a>
+          </div>
+        </div>
+
+        <a href="autres-projets.html" class="hover:text-[#008AFC] transition-colors ">Autres projets</a>
+      </nav>
+
+      <!-- CTA Button Nous contacter (Pillule noire originale) -->
+      <div class="hidden lg:flex items-center">
+        <a href="contact.html" class="bg-[#000000] text-white text-xs font-semibold px-6 py-2.5 rounded-full hover:bg-neutral-800 transition-all shadow-sm font-poppins">
+          Nous contacter
+        </a>
+      </div>
+
+      <!-- Burger Mobile -->
+      <button id="burger-btn" class="lg:hidden p-2 text-black" aria-label="Menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-50 hidden backdrop-blur-sm"></div>
+  <div id="mobile-menu" class="fixed top-0 right-0 w-80 max-w-[85%] h-full bg-white text-black z-50 p-6 flex flex-col justify-between transform translate-x-full transition-transform duration-300">
+    <div>
+      <div class="flex items-center justify-between pb-6 border-b border-gray-100">
+        <img src="assets/images/wix/7d0a66_2fd06e2fa35641c1b8d2b19d510d8f96_mv2.png" alt="HYCE" class="h-8">
+        <button id="close-menu-btn" class="text-gray-500 hover:text-black text-2xl">&times;</button>
+      </div>
+      <nav class="flex flex-col gap-3 mt-6 text-sm font-medium font-poppins">
+        <a href="index.html" class="py-2 border-b border-gray-100 text-black">Accueil</a>
+        <a href="nos-recherches.html" class="py-2 border-b border-gray-100 text-black">Nos recherches</a>
+        <a href="fonctionnement-d-un-moteur.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Fonctionnement d'un moteur</a>
+        <a href="les-defis-techniques.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les défis techniques</a>
+        <a href="notre-equipe.html" class="py-2 border-b border-gray-100 text-black">Notre équipe</a>
+        <a href="estaca.html" class="py-2 border-b border-gray-100 text-black">ESTACA</a>
+        <a href="partenaires.html" class="py-2 border-b border-gray-100 text-black">Partenaires</a>
+        <a href="hydrogene.html" class="py-2 border-b border-gray-100 text-black">Hydrogène</a>
+        <a href="sa-creation.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sa création</a>
+        <a href="les-avantages.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Les avantages</a>
+        <a href="une-energie-d-avenir.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Une énergie d'avenir ?</a>
+        <a href="securite.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Sécurité</a>
+        <a href="marche.html" class="py-2 pl-4 border-b border-gray-100 text-gray-500">&bull; Marché</a>
+        <a href="autres-projets.html" class="py-2 border-b border-gray-100 text-black">Autres projets</a>
+        <a href="contact.html" class="py-3 text-black font-semibold">Nous contacter</a>
+      </nav>
+    </div>
+  </div>
+
+
+  <main class="flex-grow pt-[75px]">
+    
+    <!-- 1. Hero Voiture sous bâche bleue (Full width avec fondu noir au bas) -->
+    <section class="relative w-full overflow-hidden bg-black">
+      <div class="relative w-full h-[550px] sm:h-[680px] lg:h-[820px]">
+        <img src="assets/images/wix/7d0a66_ba4603d52b6146298f43217acf8f5954_mv2.jpg" alt="Projet HYCE Prototype" class="w-full h-full object-cover">
+        <!-- Dégradé de fondu noir absolu au bas -->
+        <div class="absolute inset-x-0 bottom-0 h-56 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+      </div>
+    </section>
+
+    <!-- 2. Section Un projet 100% étudiant (2 colonnes, texte à gauche, photo à droite fondue) -->
+    <section class="relative bg-black text-white py-12 lg:py-20 px-6 sm:px-10 max-w-7xl mx-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Texte -->
+        <div class="space-y-6">
+          <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-normal italic text-[#008AFC] leading-tight font-poppins">
+            Un projet 100% étudiant
+          </h2>
+          <div class="border-l border-white/30 pl-6 space-y-5 text-gray-200 text-[15px] leading-relaxed font-light">
+            <p>
+              Nous sommes <strong class="font-bold text-white">HYCE</strong>, une équipe d’étudiants de l’<strong class="font-bold text-white">ESTACA</strong> <span class="italic text-gray-400">(école supérieure des techniques aéronautiques et construction automobile)</span>.
+            </p>
+            <p>
+              Tous passionnés par le sport automobile et les <strong class="font-bold text-white">émotions</strong> qu’il nous procure. Comme beaucoup de passionnés, nous sommes soucieux de l’<strong class="font-bold text-white">avenir</strong> de ce sport, le monde entier se questionne à ce sujet, beaucoup d’hypothèses sont mises sur la table pour rendre cette pratique <strong class="font-bold text-white">plus respectueuse de l’environnement</strong> : utilisation de biocarburant, passage des véhicules à l’électrique, utilisation de la technologie hybride …
+            </p>
+            <p>
+              Toutes ces propositions ont leurs <strong class="font-bold text-white">avantages</strong> et leurs <strong class="font-bold text-white">inconvénients</strong>.
+            </p>
+            <p>
+              Mais depuis quelques années déjà une solution ressort plus que les autres : <strong class="font-bold text-white">un futur basé sur l’hydrogène</strong>. Nous avons choisi cette technologie pour réaliser notre projet. Nous sommes convaincus que l'hydrogène est la meilleure solution pour représenter les valeurs du sport automobile.
+            </p>
+            <p>
+              Mais alors, <strong class="font-bold text-white">pourquoi l’hydrogène</strong> et pas une autre technologie ? Nous vous invitons à jeter un coup d’œil à notre rubrique : <a href="hydrogene.html" class="underline italic text-white hover:text-[#008AFC] transition-colors">L’hydrogène.</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Colonne Image avec fondu gradient noir -->
+        <div class="relative flex justify-center items-center">
+          <div class="relative max-w-lg w-full">
+            <img src="assets/images/wix/7d0a66_9bd62fd6fbcd4cb185dc07c37d2f09a5_mv2.jpg" alt="Équipe HYCE" class="w-full h-auto object-cover rounded-xl shadow-2xl">
+            <!-- Dégradés de fondu sur les bords pour fondre avec le noir -->
+            <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-transparent opacity-80 pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 pointer-events-none"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-transparent opacity-60 pointer-events-none"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Section Le rétrofit (Fond molécules hydrogène avec dégradés haut/bas) -->
+    <section class="relative w-full py-24 px-6 sm:px-10 overflow-hidden text-white">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/wix/7d0a66_5dec7e6c3e6b49318cb7f29ddd57101d_mv2.jpg" alt="Rétrofit hydrogène" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-black via-black/40 to-black"></div>
+      </div>
+
+      <div class="relative z-10 max-w-4xl mx-auto space-y-8 text-center sm:text-left">
+        <h2 class="text-2xl sm:text-3xl lg:text-[34px] font-extrabold text-[#008AFC] leading-snug text-center font-poppins">
+          Le rétrofit d’une voiture de course prototype à l’hydrogène, c’est notre objectif !
+        </h2>
+        <div class="border-l border-white/30 pl-6 space-y-4 text-gray-200 text-[15px] leading-relaxed max-w-3xl mx-auto font-light">
+          <p>
+            Notre ambition est de montrer au grand public les avantages et le potentiel de l’hydrogène dans l’automobile. Dans l'optique de concilier <strong class="font-bold text-white">performance</strong> et <strong class="font-bold text-white">écologie</strong>, notre mission est de réaliser le rétrofit d’un prototype (type course) à <strong class="font-bold text-white">l’hydrogène</strong>.
+          </p>
+          <p>
+            Mais qu’est-ce qu’un rétrofit ? C'est un processus qui consiste à modifier le fonctionnement d’un véhicule afin de le faire fonctionner avec une <strong class="font-bold text-white">source d’énergie différente</strong> de celle pour laquelle il a été initialement conçu.
+          </p>
+          <p>
+            Un rétrofit peut être réalisé sur n’importe quel véhicule, certes, mais le choix de prendre un prototype n’est pas anodin. Les prototypes sont des véhicules alliant <strong class="font-bold text-white">performance</strong> et <strong class="font-bold text-white">aérodynamisme</strong>, ce qui nous permettrait dev viser un <strong class="font-bold text-white">nouveau record historique…</strong>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Section Nürburgring (Fond noir, tracé à gauche, texte à droite) -->
+    <section class="bg-black text-white py-12 px-6 sm:px-10">
+      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <!-- Image tracé lumineux Nürburgring -->
+        <div class="flex justify-center">
+          <img src="assets/images/wix/7d0a66_047cb5e82ccc4312bac85b6acae984c5_mv2.jpg" alt="Circuit du Nürburgring" class="w-full max-w-md h-auto object-contain">
+        </div>
+
+        <!-- Texte Nürburgring -->
+        <div class="border-l border-white/30 pl-6 space-y-5 text-gray-200 text-[15px] leading-relaxed font-light">
+          <p>
+            Nous voulons ainsi montrer au grand public que l’hydrogène et le moteur à combustion interne sont le <strong class="font-bold text-white">futur du sport automobile</strong> et que les performances atteignables peuvent <strong class="font-bold text-white">rivaliser</strong> et même <strong class="font-bold text-white">battre</strong> celles des voitures thermiques traditionnelles.
+          </p>
+          <p>
+            Pour cela rien de mieux que de réaliser le <strong class="font-bold text-white">record du tour le plus rapide</strong> dans la catégorie hydrogène sur le circuit mythique du <strong class="font-bold text-white">Nürburgring .</strong>
+          </p>
+          <p>
+            Mondialement connu avec un tracé de 20km, et 73 virages, ce circuit est <strong class="font-bold text-white">la référence</strong> de performance pour un véhicule sportif. C’est ici que les constructeurs automobile testent leurs voitures pour montrer leurs niveaux de performance et de fiabilité.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Section Environnement & Mobilité (Fond éoliennes, texte vert & centré) -->
+    <section class="relative w-full min-h-[720px] py-36 px-6 sm:px-10 overflow-hidden text-center flex items-center justify-center">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/wix/7d0a66_e31579fcc9fe4b49b708dbe6f4824e0f_mv2.jpg" alt="Éoliennes mobilité propre" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-white/10 to-black/80"></div>
+      </div>
+
+      <div class="relative z-10 max-w-3xl mx-auto space-y-8 bg-white/85 backdrop-blur-md p-8 sm:p-14 rounded-3xl border border-white/40 shadow-2xl">
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-[#1e5128] leading-tight font-poppins">
+          Un projet en phase avec les enjeux environnementaux de notre mobilité
+        </h2>
+        <div class="space-y-5 text-gray-800 text-[15px] sm:text-base leading-relaxed font-light font-poppins">
+          <p>
+            Dans cette dynamique européenne de mettre tout en œuvre pour être des citoyens plus <strong class="font-bold text-black">respectueux de l’environnement</strong>, nous voulions nous investir pour trouver les meilleures solutions pour arriver à la <strong class="font-bold text-black">neutralité carbone en 2050</strong>.
+          </p>
+          <p>
+            Le projet HYCE est une démarche sportive mais avant tout <strong class="font-bold text-black">écologique</strong> : en effet le choix de l’hydrogène repose sur ses propriétés <strong class="font-bold text-black">vertes</strong> : sa combustion produit principalement de l’eau, effaçant cette production de gaz à effets de serre néfaste à notre environnement.
+          </p>
+          <p>
+            HYCE a pour volonté de montrer aux passionnés d’automobile et des transports en général, que <strong class="font-bold text-black">l'écologie</strong> ne rime pas avec restriction, mais plutôt avec <strong class="font-bold text-black">innovation</strong>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Section CTA Faire partie de notre projet (Fond atelier + boîte noire) -->
+    <section class="relative w-full py-24 px-6 sm:px-10 overflow-hidden">
+      <div class="absolute inset-0 z-0">
+        <img src="assets/images/wix/c837a6_870aaf57c1d9484a9a6ee57f2465df75_mv2.jpg" alt="Atelier HYCE" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+      </div>
+
+      <div class="relative z-10 max-w-2xl mx-auto">
+        <div class="bg-black/90 rounded-3xl p-10 sm:p-14 text-center border border-[#222] shadow-2xl space-y-6">
+          <h3 class="text-2xl sm:text-3xl font-normal text-white tracking-widest uppercase">
+            Vous voulez faire partie de notre projet ?
+          </h3>
+          <div>
+            <a href="contact.html" class="inline-block border border-white text-white hover:bg-white hover:text-black transition-all px-8 py-3 rounded-full text-xs uppercase font-bold tracking-wider">
+              Voir la rubrique
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+    <!-- Footer (Blanc, texte noir, 2 colonnes, logo à droite) -->
+  <footer class="bg-[#FFFFFF] border-t border-gray-100 py-16 text-black mt-auto font-poppins">
+    <div class="max-w-6xl mx-auto px-6 sm:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <!-- Colonne Gauche -->
+        <div class="space-y-6">
+          <div class="flex items-center gap-4">
+            <span class="font-bold text-sm tracking-wide uppercase">SUIVEZ-NOUS</span>
+            <div class="flex items-center gap-3">
+              <a href="https://www.instagram.com/hyce_estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="Instagram">
+                <img src="assets/images/wix/e1aa082f7c0747168d9cf43e77046142.png" alt="Instagram" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.linkedin.com/company/hyce-estaca/" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="LinkedIn">
+                <img src="assets/images/wix/aa0402eb9ba2430d9d0620b59556efca.png" alt="LinkedIn" class="w-4 h-4 invert brightness-0">
+              </a>
+              <a href="https://www.tiktok.com/@hyce_estaca" target="_blank" rel="noopener" class="w-8 h-8 rounded-full bg-black flex items-center justify-center hover:opacity-80 transition" aria-label="TikTok">
+                <img src="assets/images/wix/11062b_4b88b89fe4694d949be4919c81f194b4_mv2.png" alt="TikTok" class="w-4 h-4 invert brightness-0">
+              </a>
+            </div>
+          </div>
+
+          <div class="space-y-1 text-sm font-light">
+            <p><span class="font-semibold text-black">E-mail :</span> &nbsp; <a href="mailto:Projet.hyce@estaca.eu" class="hover:underline text-gray-800">Projet.hyce@estaca.eu</a></p>
+            <p><span class="font-semibold text-black">Adresse :</span> &nbsp; <span class="text-gray-800">Rue Georges Charpak, 53000 Laval</span></p>
+          </div>
+
+          <div class="pt-2">
+            <p class="font-bold text-sm mb-3">Abonnez-vous à notre newsletter !</p>
+            <form onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');" class="flex max-w-sm">
+              <input type="email" placeholder="E-mail" required class="flex-grow px-4 py-2 border border-black rounded-l-full text-xs focus:outline-none font-poppins">
+              <button type="submit" class="bg-black text-white px-5 py-2 rounded-r-full text-xs font-semibold hover:bg-neutral-800 transition font-poppins">S'abonner</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Colonne Droite: Logo HYCE Noir -->
+        <div class="flex justify-center md:justify-end">
+          <img src="assets/images/wix/7d0a66_cd7d50c504b2476c929c837ff3b37d3d_mv2.png" alt="HYCE" class="h-32 sm:h-40 w-auto object-contain">
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
+
+
+  <script>
+    const burgerBtn = document.getElementById('burger-btn');
+    const closeBtn = document.getElementById('close-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const overlay = document.getElementById('mobile-overlay');
+
+    if (burgerBtn && mobileMenu && overlay) {
+      burgerBtn.addEventListener('click', () => {
+        mobileMenu.classList.remove('translate-x-full');
+        overlay.classList.remove('hidden');
+      });
+      const close = () => {
+        mobileMenu.classList.add('translate-x-full');
+        overlay.classList.add('hidden');
+      };
+      closeBtn.addEventListener('click', close);
+      overlay.addEventListener('click', close);
+    }
+  </script>
+</body>
+</html>
